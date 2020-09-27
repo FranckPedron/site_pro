@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Franck Pedron</title>
+
+    <style>
+
+        :root {
+            --color1: #d89584
+        }
+        
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+        
+        div.cover {
+            background: url(cover_overlay.png) no-repeat center/100%,url(cover.jpg) no-repeat center/cover;
+            height: 360px;
+        }
+
+        img.cover-profile {
+            height: 100px;
+            position: relative;
+            left: 50%;
+            margin-left: -50px;
+            margin-top: 30px;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+        }
+
+        div.cover p {
+            color: lightgrey;
+            text-align: center;
+            position: relative;
+        }
+
+        div.cover-contact {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            border-left:4px solid var(--color1);
+            padding-left: 8px;
+        }
+
+        div.cover-contact p {
+            text-align: left;
+        }
+
+        div.cover-contact * {
+            color: white;
+            font-size: 14px;
+        }
+
+        a.contact_button {
+            border: 3px solid var(--color1);
+            color: var(--color1);
+            padding: 8px 20px;
+            text-decoration: none;
+            background-color: #00000040;
+            display: inline-block;
+            margin-top: 15px;
+        }
+
+        a.contact_button:hover {
+            border: 3px solid white;
+            color: white; 
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="cover">
+        <img class="cover-profile" src="Franck.jpg"/>
+        <h1>Franck Pedron</h1>
+        <p>Développeur Freelance</p>
+
+        <div style="text-align: center;">
+            <p><a class="contact_button" href="mailto:franckyp1@gmail.com?subject=Contact%20depuis%20votre%20site.">Me contacter</a></p>
+        </div>
+
+        <div class="cover-contact">
+            <p><a href="mailto:franckyp1@gmail.com?subject=Contact%20depuis%20votre%20site.">franckyp1@gmail.com</a></p>
+            <p><a href="tel:+33607168509">06 07 16 85 09</a></p>
+        </div>
+    </div>
+</body>
+</html>
